@@ -1,0 +1,23 @@
+body
+{
+	padding-left: 9em;
+	width: auto;
+	color: black
+}
+ul.navbar
+{
+	position: absolute;
+	top: 1em;
+	left: 0em;
+	width: 9em
+}
+p.contactinfo
+{
+	position: relative;
+	left: 2em
+}
+pre
+{
+	position: relative;
+	left: 2em
+}

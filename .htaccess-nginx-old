@@ -1,0 +1,11 @@
+# nginx configuration
+
+#location /~bpike/generalization_of_brion.pdf {
+#	rewrite ^(.*)$ http://arxiv.org/abs/1309.3769 permanent;
+#	rewrite ^(.*)$ /~bpike/generalization_of_brion.html redirect;
+#}
+
+location /~bpike/ {
+#	try_files /~bpike/generalization_of_brion.pdf /~bpike/generalization_of_brion.html;
+	if ~
+}

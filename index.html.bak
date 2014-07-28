@@ -2,7 +2,26 @@
 <html>
 <head>
 	<title>Homepage of Brian Pike</title>
-	<link rel="stylesheet" href="./style.css" type="text/css">
+	<style type="text/css">
+		body
+		{
+			padding-left: 9em;
+			width: auto;
+			color: black
+		}
+		ul.navbar
+		{
+			position: absolute;
+			top: 1em;
+			left: 1em;
+			width: 9em
+		}
+		p.contactinfo
+		{
+			position: relative;
+			left: 2em
+		}
+	</style>
 </head>
 <body>
 <!-- Created with Vim -->
@@ -11,29 +30,24 @@
 	<li><a href="index.html">Home</a>
 	<li><a href="teaching.html">Teaching</a>
 	<li><a href="research.html">Research</a>
-	<li><a href="software.html">Software</a>
 	<li><a href="cv.pdf">C.V.</a>
 </ul>
 
-<p>This is the home page of Brian Pike.</p>
+<p>You have reached the home page of Brian Pike.</p>
 <!--<img src="me_at_gyf.jpg" alt="Me at Graveyard Fields, 2005">-->
 <h3>About me</h3>
 <p>
-I am currently a Postdoctoral Fellow in mathematics at the
+I am currently a Postdoctoral Fellow in mathematics at the 
+<a href="http://www.utsc.utoronto.ca/~csms/math.html">Scarborough campus</a> of the
 <a href="http://www.math.utoronto.ca/">University of Toronto</a>.
-I teach on the 
-<a href="http://www.utsc.utoronto.ca/~csms/math.html">Scarborough</a> campus
-and do research on the
-<a href="http://www.utoronto.ca/campuses/downtown-toronto.htm">St.
-George</a> campus.
 </p>
 <h3>Education</h3>
 <p>
 <ul>
 <li>Ph.D., Mathematics, <a href="http://www.math.unc.edu">University of North Carolina at Chapel Hill</a>,
 August 2010, under the supervision of <a href="http://www.math.unc.edu/Faculty/jndamon/">James Damon</a>.
-<li>B.S., Applied Mathematics, <a href="http://www.ncsu.edu/">North Carolina State University</a>, May 2005
-<li>B.S., Computer Science, North Carolina State University, May 2005
+<li>B.S., Applied Mathematics, <a href="http://www.ncsu.edu/">North Carolina State University</a>, summa cum laude, May 2005
+<li>B.S., Computer Science, North Carolina State University, summa cum laude, May 2005
 </ul>
 I've also spent time at
 <a href="http://www.bsmath.hu/">several</a>
@@ -44,7 +58,7 @@ I've also spent time at
 <h3>Contact Information</h3>
 <p class="contactinfo">
 	Brian Pike<br>
-	IC458 (Scarborough campus) or BA6204 (St. George campus)<br>
+	IC469 (Scarborough campus) or TODO (St. George campus)<br>
 	Department of Computer and Mathematical Sciences<br>
 	University of Toronto, Scarborough<br>
 	1265 Military Trail<br>

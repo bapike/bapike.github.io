@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<title>Brian Pike - Software</title>
+	<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+<!-- Created with Vim -->
+
+<ul class="navbar">
+	<li><a href="index.html">Home</a>
+	<li><a href="teaching.html">Teaching</a>
+	<li><a href="research.html">Research</a>
+	<li><a href="software.html">Software</a>
+	<li><a href="cv.pdf">C.V.</a>
+</ul>
+
+<h3>Software</h3>
+<p>
+While conducting my research, I have written some useful programs for 
+the <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2</a>
+computer algebra system:
+</p>
+<ul>
+	<li>the package '<a
+	href="./software/VectorFields/1.0/VectorFields.m2">VectorFields</a>' provides
+	useful functions for dealing with modules of vector fields on
+	affine space (Lie bracket, etc.).
+	To install it, start Macaulay2 and type:
+	<pre>
+		getPackage("VectorFields",Repository=>"http://www.utsc.utoronto.ca/~bpike/software/");
+	</pre>
+	to have Macaulay2 download the software and build the
+	documentation.  Before you may use it in a M2 session, you must do
+	<pre>
+		needsPackage "VectorFields";
+	</pre>
+	<li>Here are several scripts used for computing singular Milnor numbers,
+	which were used for <a href="http://arxiv.org/abs/1201.1579">
+	"Solvable Groups, Free Divisors and Nonisolated Matrix
+	Singularities II: Vanishing Topology"</a> (joint with
+	<a href="http://math.unc.edu/Faculty/jndamon/">James Damon</a>).
+		<ul>
+		<li><a href="./software/calc_smn.m2">calc_smn.m2</a> provides methods for computing
+		singular Milnor numbers. I also
+		provide a method implementing the Le-Greuel formula to compute the Milnor number of an ICIS.
+		<li><a href="./software/mat2x3.m2">mat2x3.m2</a> uses calc_smn.m2 to compute the vanishing
+		Euler characteristics of 2x3 matrix singularities by the formula in the paper.
+		<li><a href="./software/mat2x3verify.m2">mat2x3verify.m2</a> uses mat2x3.m2 to compute the
+		examples listed at the end of the paper.
+		</ul>
+</ul>
+
+<h4>
+Disclaimer: This document in no way represents the University of Toronto at Scarborough. All opinions and errors are mine alone.
+</h4>
+
+</body>
+</html>
