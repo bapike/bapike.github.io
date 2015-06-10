@@ -1,23 +1,154 @@
-body
-{
-	padding-left: 9em;
-	width: auto;
-	color: black
+/*
+ This is based on
+   http://blog.html.it/layoutgala/LayoutGala13.html
+ which is similar to
+   http://www.w3schools.com/css/tryit.asp?filename=trycss_float6
+
+ References on selectors:
+   http://gallery.theopalgroup.com/selectoracle
+   http://www.w3schools.com/cssref/css_selectors.asp
+
+ Remember:
+  margin is outside the border
+  padding is inside the border
+  the contents are inside the padding
+  
+
+ Colors:
+  Carolina blue is #56A0D3 (or maybe  #99badd)
+  
+  
+  http://colorschemedesigner.com/csd-3.5/#3z32drAA9w0w0
+  a blue: 2470B4
+  a yellow: FFE323
+  a red: F82237
+*/
+
+/* This helpfully draws boxes around all boxes TODO */
+* {
+	border:0px solid black;
 }
-ul.navbar
-{
-	position: absolute;
-	top: 1em;
-	left: 0em;
-	width: 9em
+body{
+	/* This makes there be no whitespace around the edge of the screen */
+	margin:0px;
+	padding:0px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12pt;
 }
-p.contactinfo
-{
-	position: relative;
-	left: 2em
+h1,h2,h3,h4,p{
+	margin-top: 0;
+	padding-top: 0;
+	/*border:0px solid black;*/
+	line-height: 1.1;
 }
-pre
-{
-	position: relative;
-	left: 2em
+h1,h2,h3,h4{
+	margin-bottom:0.25em;
+/*	font-family: Arial, Helvetica, sans-serif;*/
+}
+a        { color: blue;}
+a:visited{ color: purple;}
+a:hover  { color: red;}
+
+/*
+ The header div is a grey box whose outside padding pushes it off the left side.
+ To make it compact, stuff inside should not have a margin.
+*/
+div#header{
+	margin:0px;
+	padding-left:210px; /* TODO */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: lightgray;
+	background-color: grey;
+	background-color: #2470B4;
+	background-color: #579CD9;
+	background-color:  #0191C8;
+	background-color: RoyalBlue;
+	background-color: LightSkyBlue;
+	background-color: LightSteelBlue;
+	color: #F82237;
+	color: #FFE323;
+	color: black;
+}
+div#header *{
+	margin:0px;
+}
+/* What's inside should take up the whole width of the page */
+div#wrap_main{
+/*	float:left;*/
+	padding-top: 5px;
+/*	margin-top: 5px;
+	border-top: 1px white solid; /* TODO: why is this necessary?! */
+	/*border-top: 0; */
+	width:100%;
+}
+
+/*
+ Navigation bar, mostly an <ul>
+ The navbar itself should be a nice-looking box.
+ The list should have little padding to the left, and will mostly be links that should look nice.
+ TODO: I suppose I could use ::after to embed the navbar HTML into the CSS, but what about non-CSS browsers? 
+*/
+div#navbar{
+	float:left;
+	background-color: lightblue;
+	background-color: #579CD9;
+	background-color: #74C2E1;
+	background-color: #FFDE83;
+	background-color: LightSkyBlue;
+	background-color: Cornsilk;
+	background-color: LemonChiffon;
+	background-color: LightYellow;
+/*	color: yellow;*/
+	color: #F82237;
+	color: black;
+	width: 188px;
+	border: 1px black solid;
+	margin: 0 2.5px;
+	padding: 5px;
+	overflow: auto;
+/*	width:188px; /* TODO This would look better *
+	padding:3px;
+	margin:3px;*/
+}
+div#navbar ul{
+	list-style-position: outside; /* This seems to make the padding-left be the distance to the contents of the item */
+	list-style-type: square;
+	padding-left:20px;
+	margin:0;
+}
+/* second-level lists */
+div#navbar ul ul{
+	list-style-type: disc;
+}
+div#navbar a{
+	text-decoration: none;
+}
+div#navbar a:hover{
+	text-decoration: underline;
+}
+
+/*
+ Where the interesting bits should go.
+ The padding-left pushes off so the contents of the box appear next to the navbar.
+ The max-width ensures that the text of the page is not unreadably wide, but if the window is shrunk then it behaves nicely.
+*/
+div#main{
+	margin-left: 200px;
+	padding: 0 10px;
+	/*margin: 0 5px;*/
+	max-width: 60%;
+	min-width: 200px;
+}
+
+/* Offset by fixed width on the sides? */
+div#footer{
+	background-color: lightgray;
+	color: #FFF;
+	clear:left;
+	width:100%;
+}
+div#footer p{
+	margin:0;
+	padding:5px 10px;
 }
