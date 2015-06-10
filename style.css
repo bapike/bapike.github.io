@@ -13,15 +13,8 @@
   padding is inside the border
   the contents are inside the padding
   
-
  Colors:
   Carolina blue is #56A0D3 (or maybe  #99badd)
-  
-  
-  http://colorschemedesigner.com/csd-3.5/#3z32drAA9w0w0
-  a blue: 2470B4
-  a yellow: FFE323
-  a red: F82237
 */
 
 /* This helpfully draws boxes around all boxes TODO */
@@ -43,7 +36,6 @@ h1,h2,h3,h4,p{
 }
 h1,h2,h3,h4{
 	margin-bottom:0.25em;
-/*	font-family: Arial, Helvetica, sans-serif;*/
 }
 a        { color: blue;}
 a:visited{ color: purple;}
@@ -58,28 +50,15 @@ div#header{
 	padding-left:210px; /* TODO */
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: lightgray;
-	background-color: grey;
-	background-color: #2470B4;
-	background-color: #579CD9;
-	background-color:  #0191C8;
-	background-color: RoyalBlue;
-	background-color: LightSkyBlue;
 	background-color: LightSteelBlue;
-	color: #F82237;
-	color: #FFE323;
-	color: black;
+/*	color: black;*/
 }
 div#header *{
 	margin:0px;
 }
 /* What's inside should take up the whole width of the page */
 div#wrap_main{
-/*	float:left;*/
 	padding-top: 5px;
-/*	margin-top: 5px;
-	border-top: 1px white solid; /* TODO: why is this necessary?! */
-	/*border-top: 0; */
 	width:100%;
 }
 
@@ -91,25 +70,13 @@ div#wrap_main{
 */
 div#navbar{
 	float:left;
-	background-color: lightblue;
-	background-color: #579CD9;
-	background-color: #74C2E1;
-	background-color: #FFDE83;
-	background-color: LightSkyBlue;
-	background-color: Cornsilk;
-	background-color: LemonChiffon;
 	background-color: LightYellow;
-/*	color: yellow;*/
-	color: #F82237;
-	color: black;
+	/*color: black;*/
 	width: 188px;
 	border: 1px black solid;
 	margin: 0 2.5px;
 	padding: 5px;
 	overflow: auto;
-/*	width:188px; /* TODO This would look better *
-	padding:3px;
-	margin:3px;*/
 }
 div#navbar ul{
 	list-style-position: outside; /* This seems to make the padding-left be the distance to the contents of the item */
@@ -143,8 +110,7 @@ div#main{
 
 /* Offset by fixed width on the sides? */
 div#footer{
-	background-color: lightgray;
-	color: #FFF;
+	background-color: LightSteelBlue;
 	clear:left;
 	width:100%;
 }
