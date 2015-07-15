@@ -37,12 +37,17 @@ computer algebra system:
 	affine space (Lie bracket, etc.).
 	To install it, start Macaulay2 and type:
 <pre>
-getPackage("VectorFields",Repository=>"http://www.utsc.utoronto.ca/~bpike/software/");
+getPackage("VectorFields",Repository=>"http://www.brianpike.info/software/");
 </pre>
 	to have Macaulay2 download the software and build the
 	documentation.  Before you may use it in a M2 session, you must do
 <pre>
 needsPackage "VectorFields";
+</pre>
+	<li>the package '<a href="./software/RunExternalM2/0.8/RunExternalM2.m2">RunExternalM2</a>' provides a way to run Macaulay2 functions in an external Macaulay2 process.  This allows you to use operating system features to limit resource usage (CPU time, memory, etc.), even for specific parts of your computation.
+	To install it, start Macaulay2 and type:
+<pre>
+getPackage("RunExternalM2",Repository=>"http://www.brianpike.info/software/");
 </pre>
 	<li>Here are several scripts used for computing singular Milnor numbers,
 	which were used for <a href="http://arxiv.org/abs/1201.1579">
