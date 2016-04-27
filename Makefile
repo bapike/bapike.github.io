@@ -4,13 +4,12 @@
 #   src/common-pre_content.htmlsnip
 #   src/common-post_content.htmlsnip
 # and then have, e.g.,
-#   src/foo-title.htmlsnip
-#   src/foo-content.htmlsnip
-# Then "foo.htmlsnip" would be built by concatenating:
+#   src/foo.htmlsnip
+# Then "foo.html" would be built by concatenating:
 #   src/common-pre_title.htmlsnip
-#   src/foo-title.htmlsnip
+#   the first line of src/foo.htmlsnip
 #   src/common-pre_content.htmlsnip
-#   src/foo-content.htmlsnip
+#   the rest of src/foo.htmlsnip
 #   src/common-post_content.htmlsnip
 
 SRCDIR=src
@@ -21,7 +20,9 @@ POSTCONTENT=$(SRCDIR)/common-3-post_content.htmlsnip
 
 COMMONDEPS=$(PRETITLE) $(PRECONTENT) $(POSTCONTENT) 
 
-all: index.html about.html software.html teaching.html research.html test.html
+TARGETS=index.html about.html software.html teaching.html research.html test.html
+
+all: $(TARGETS)
 
 # Unfortunately, this will add newlines at the end of each file, but there's no easy way around that 
 %.html: $(COMMONDEPS) $(SRCDIR)/%.htmlsnip
@@ -31,8 +32,17 @@ all: index.html about.html software.html teaching.html research.html test.html
 	tail -n +2 $(SRCDIR)/$*.htmlsnip >> $@
 	cat $(POSTCONTENT) >> $@
 
-#cat $(PRETITLE) $(SRCDIR)/$*-title.htmlsnip $(PRECONTENT) $(SRCDIR)/$*-content.htmlsnip $(POSTCONTENT) > $@ 
-
 clean:
-	rm -f *.html
+	rm -f $(TARGETS)
+
+add:
+	git add $(TARGETS)
+
+help:
+	@ echo "Possible targets:"
+	@ echo "all                  Build all the autobuilt HTML files"
+	@ echo "foo.html             Build foo.html"
+	@ echo "add                  \"git add\" all of the autobuilt HTML files"
+	@ echo "clean                Delete all built products"
+	@ echo "help                 Ask for help"
 
