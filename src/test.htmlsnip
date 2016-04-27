@@ -1,31 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-	<title>
 A test page
-	</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" >
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<!-- Created with Vim -->
-<body>
-
-<div id="header">
-	<h1>Brian Pike</h1>
-</div>
-<div id="wrap_main">
-<div id="navbar">
-<ul>
-	<li><a href="index.html">Main</a></li>
-	<li><a href="about.html">About Me</a></li>
-	<li><a href="software.html">Software</a></li>
-	<li><a href="teaching.html">Math Teaching</a></li>
-	<li><a href="research.html">Math Research</a></li>
-</ul>
-</div>
-
-<div id="main">
 
 <h1>Test heading, h1</h1>
 <p><strong>1) Content here.</strong> column long long column very long fill fill fill long text text column text silly very make long very fill silly make make long make text fill very long text column silly silly very column long very column filler fill long make filler long silly very long silly silly silly long filler make column filler make silly long long fill very.</p>
@@ -48,12 +21,3 @@ A test page
 <p>fill long make long text <a href="http://www.google.com">very</a> make long fill column make text very silly column filler silly text fill text filler filler filler make make make make text filler fill column filler make silly make text text fill make very filler column very </p>
 
 
-</div>
-</div>
-
-<!--<div id="footer">
-	<p></p>
-</div>-->
-
-</body>
-</html>
