@@ -1,16 +1,16 @@
 #!/usr/bin/make
 # Most of the HTML of all of the pages will be identical.  Let's keep the common HTML in:
-#   src/common-pre_title.htmlsnip
-#   src/common-pre_content.htmlsnip
-#   src/common-post_content.htmlsnip
+#   src/common-1-pre_title.htmlsnip
+#   src/common-2-pre_content.htmlsnip
+#   src/common-3-post_content.htmlsnip
 # and then have, e.g.,
 #   src/foo.htmlsnip
-# Then "foo.html" would be built by concatenating:
-#   src/common-pre_title.htmlsnip
+# Then "foo.html" is built by concatenating:
+#   src/common-1-pre_title.htmlsnip
 #   the first line of src/foo.htmlsnip
-#   src/common-pre_content.htmlsnip
+#   src/common-2-pre_content.htmlsnip
 #   the rest of src/foo.htmlsnip
-#   src/common-post_content.htmlsnip
+#   src/common-3-post_content.htmlsnip
 
 SRCDIR=src
 
