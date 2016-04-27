@@ -22,14 +22,25 @@
 	border:0px solid black;
 }*/
 
-/* Use the whole height of the page */
-html{ height: 100%}
+/* Use the whole height of the page 
+html{ height: 100%} */
 body{
 	/* This makes there be no whitespace around the edge of the screen */
 	margin:0px;
 	padding:0px;
 	font-family: "Times New Roman", Times, serif;
 	font-size: 12pt;
+	/* mobile Chrome (and perhaps other browsers) try to enlarge the
+	   primary text on screen, apparently:
+	     http://stackoverflow.com/questions/20924039/wrong-font-size-when-using-float-right-in-css-on-mobile-safari
+             
+	     https://docs.google.com/document/d/1PPcEwAhXJJ1TQShor29KWB17KJJq7UJOM34oHwYP3Zg/edit?pli=1
+	   Doing the following does not seem to work, so we'll instead add a viewport with a meta tag:
+	text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+	-moz-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%;
+	*/
 }
 h1,h2,h3,h4,p{
 	margin-top: 0;
@@ -47,7 +58,7 @@ a:hover  { color: red;}
 p.quoted { margin-left: 2em;}
 
 /*
- The header div is a grey box whose outside padding pushes it off the left side.
+ The header div is a box whose outside padding pushes it off the left side.
  To make it compact, stuff inside should not have a margin.
 */
 div#header{
@@ -103,7 +114,7 @@ div#navbar a:hover{
 }
 
 /*
- Where the interesting bits should go.
+ Where the content should go.
  The padding-left pushes off so the contents of the box appear next to the navbar.
  The max-width ensures that the text of the page is not unreadably wide, but if the window is shrunk then it behaves nicely.
 */
