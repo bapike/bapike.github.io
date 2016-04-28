@@ -129,6 +129,8 @@ div#main p  {font-size: 1.0em;}
 div#main h1 {font-size: 1.4em;}
 div#main h2 {font-size: 1.2em;}
 div#main strong {font-style: italic;}
+div#main code {display: block; margin: 0 auto 0 2em; padding: 0;}
+/* Note: pre is a top-level tag and shouldn't be inside a <p> */
 div#main pre {display: block; margin: 0 auto 0 2em; padding: 0;}
 div#main li {margin: 0 0 1em 0.0em;}
 div#main img {
