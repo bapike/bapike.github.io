@@ -1,34 +1,30 @@
 Brian Pike - About
 
-<h1>Work</h1>
-<ul>
-<li>July 2011-June 2014, Postdoctoral Fellow in Mathematics at the 
-<a href="http://www.math.utoronto.ca/">University of Toronto</a>.
-<!--I taught on the 
-<a href="http://www.utsc.utoronto.ca/~csms/math.html">Scarborough</a> campus
-and did research on the
-<a href="http://www.utoronto.ca/campuses/downtown-toronto.htm">St.
-George</a> campus.-->
-<li>2005-2011, Graduate Student and Visiting Lecturer, <a href="http://www.math.unc.edu">University of North Carolina at Chapel Hill</a>.
-</ul>
-
-<h1>Education</h1>
+<h1>Background</h1>
 <p>
-<ul>
-<li>Ph.D., Mathematics, <a href="http://www.math.unc.edu">University of North Carolina at Chapel Hill</a>,
-August 2010, under the supervision of <a href="http://www.math.unc.edu/Faculty/jndamon/">James Damon</a>.
-<li>B.S., Applied Mathematics, <a href="http://www.ncsu.edu/">North Carolina State University</a>, May 2005
-<li>B.S., Computer Science, <a href="http://www.ncsu.edu/">North Carolina State University</a>, May 2005
-</ul>
-I've also spent time at
-several
+After growing up in North Carolina, I attended <a href="http://www.ncssm.edu/">NCSSM</a>
+for high school, <a href="http://www.ncsu.edu/">NC State University</a> for Bachelor's
+degrees in Computer Science and Applied Math,
+and finally <a href="http://www.math.unc.edu">UNC-Chapel Hill</a> for a Ph.D. in Mathematics.
+I was then a Postdoctoral Fellow at the  
+<a href="http://www.math.utoronto.ca/">University of Toronto</a> in Canada,
+and later came back to North Carolina.
+<!--
+I've also spent time at several 
 <a href="http://www.bsmath.hu/">other</a>
-<!--<a href="http://www.fsu.edu/">other</a>-->
-<a href="http://www.ncssm.edu/">places</a>.
+<a href="http://www.fsu.edu/">places</a>.
+-->
 </p>
-<h1>CV</h1>
+
+<h1>Interests</h1>
 <p>
-My full CV is available <a href="cv.pdf">here</a>.
+Besides my mathematical interests (both <a href="teaching.html">teaching</a> and
+<a href="research.html">research</a>),
+for many years I've been interested in technology.
+There are web pages I created in 1996
+that are, amazingly, <a href="https://www.ncsu.edu/midlink/holidays/holiday.menu.html">still online</a>.
+After encountering Unix around 1999, I started using Linux in 2000 and have never stopped.
+Currently I mainly use <a href="http://www.debian.org">Debian</a>.
 </p>
 
 

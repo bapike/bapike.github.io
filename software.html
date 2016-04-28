@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<title>
@@ -29,43 +29,63 @@ Brian Pike - Software
 
 <h1>Software</h1>
 <p>
-While conducting my research, I have written some useful programs for 
-the <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2</a>
-computer algebra system:
+Over the years, I've written lots of software.
+A few things have been posted at 
+<a href="https://github.com/bapike">GitHub</a>, including:
 </p>
 <ul>
-	<li>the package '<a
-	href="./software/VectorFields/1.0/VectorFields.m2">VectorFields</a>' provides
-	useful functions for dealing with modules of vector fields on
-	affine space (Lie bracket, etc.).
-	To install it, start Macaulay2 and type:
-<pre>
+	<li>some <a href="https://github.com/bapike/code_samples">code samples</a>; and
+	<li>the <a href="https://github.com/bapike/bapike.github.io">source for this website</a>, which has been written by hand as an exercise to learn CSS.
+</ul>
+
+<h2>Mathematical software</h2>
+<p>
+Much of my mathematical research has been helped by the use of 
+the <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2</a>
+computer algebra system.
+Along the way, I've made a few 
+<a href="https://github.com/Macaulay2/M2/commits?author=bapike">contributions</a>
+to the project, including two packages:
+</p>
+<ul>
+  <li><strong>VectorFields</strong> provides useful functions for computing with modules
+      of vector fields on affine space (Lie bracket, module of logarithmic vector fields,
+      etc.). 
+  <li><strong>RunExternalM2</strong> provides a way to run Macaulay2 functions in an
+      external Macaulay2 process.  This allows you to use operating system features to
+      limit resource usage (CPU time, memory, etc.), even for specific parts of your
+      computation.
+</ul>
+<p>
+Though these packages should be included in Macaulay2 version 1.9 and later,
+you can manually install a package by starting Macaulay2 and executing, e.g.,
+<code>
 getPackage("VectorFields",Repository=>"http://www.brianpike.info/software/");
-</pre>
-	to have Macaulay2 download the software and build the
-	documentation.  Before you may use it in a M2 session, you must do
-<pre>
+</code>
+Then you may use use the package by running, e.g., 
+<code>
 needsPackage "VectorFields";
-</pre>
-	<li>the package '<a href="./software/RunExternalM2/0.8/RunExternalM2.m2">RunExternalM2</a>' provides a way to run Macaulay2 functions in an external Macaulay2 process.  This allows you to use operating system features to limit resource usage (CPU time, memory, etc.), even for specific parts of your computation.
-	To install it, start Macaulay2 and type:
-<pre>
-getPackage("RunExternalM2",Repository=>"http://www.brianpike.info/software/");
-</pre>
-	<li>Here are several scripts used for computing singular Milnor numbers,
-	which were used for <a href="http://arxiv.org/abs/1201.1579">
-	"Solvable Groups, Free Divisors and Nonisolated Matrix
-	Singularities II: Vanishing Topology"</a> (joint with
-	<a href="http://math.unc.edu/Faculty/jndamon/">James Damon</a>).
-		<ul>
-		<li><a href="./software/calc_smn.m2">calc_smn.m2</a> provides methods for computing
-		singular Milnor numbers. I also
-		provide a method implementing the Le-Greuel formula to compute the Milnor number of an ICIS.
-		<li><a href="./software/mat2x3.m2">mat2x3.m2</a> uses calc_smn.m2 to compute the vanishing
-		Euler characteristics of 2x3 matrix singularities by the formula in the paper.
-		<li><a href="./software/mat2x3verify.m2">mat2x3verify.m2</a> uses mat2x3.m2 to compute the
-		examples listed at the end of the paper.
-		</ul>
+</code>
+Older versions of these packages are 
+<a href="https://github.com/bapike/bapike.github.io/tree/master/software">viewable on GitHub</a>.
+TODO: put latest version of these packages on website
+</p>
+<p>
+I also wrote 
+several programs to compute singular Milnor numbers.
+They were used for <a href="http://arxiv.org/abs/1201.1579">
+"Solvable Groups, Free Divisors and Nonisolated Matrix
+Singularities II: Vanishing Topology"</a> (joint with
+<a href="http://math.unc.edu/Faculty/jndamon/">James Damon</a>):
+</p>
+<ul>
+	<li><a href="./software/calc_smn.m2">calc_smn.m2</a> provides methods for computing
+	singular Milnor numbers. I also
+	provide a method implementing the Le-Greuel formula to compute the Milnor number of an ICIS.
+	<li><a href="./software/mat2x3.m2">mat2x3.m2</a> uses calc_smn.m2 to compute the vanishing
+	Euler characteristics of 2x3 matrix singularities by the formula in the paper.
+	<li><a href="./software/mat2x3verify.m2">mat2x3verify.m2</a> uses mat2x3.m2 to compute the
+	examples listed at the end of the paper.
 </ul>
 
 </div>

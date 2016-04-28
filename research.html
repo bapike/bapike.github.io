@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<title>
@@ -27,29 +27,25 @@ Brian Pike - Research
 
 <div id="main">
 
-<h1>Research Interests</h1>
+<!-- Include MathJAX -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<!--  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> -->
+
+
+<h1>Mathematical Research Interests</h1>
 <p>
 My research interests include complex analytic geometry, the singularity
 theory of holomorphic maps, and connections to representation theory.  I am
-especially interested in the <i>logarithmic vector fields</i> that are
-tangent to an analytic germ; and <i>free divisors</i>, hypersurfaces for
-which this module is free.
+especially interested in <i>logarithmic vector fields</i>,
+the vector fields that are tangent to a hypersurface or analytic germ;
+and <i>free divisors</i>, hypersurfaces for which the module of logarithmic
+vector fields is a free module.
 <!--differential topology, and computational algebra.-->
-</p>
-<p>
-In my <a href="thesis.pdf">dissertation</a>, I studied the topology of complex analytic sets,
-in particular a generalization of the classical <a
-href="http://en.wikipedia.org/wiki/Milnor_number">Milnor number</a>
-of isolated hypersurface and isolated complete intersection
-singularities.
-Although this <i>singular Milnor number</i> is defined 
-quite generally (even for many non-isolated singularities),
-formulas to compute it are known in only a few cases.
-In my dissertation I describe an approach to find computable
-algebraic formulas for certain classes of singular Milnor numbers,
-and apply this technique to certain matrix singularities.
-The key step involves using representation theory to find examples of
-free divisors which include the singular matrices.
+I am also interested in the teaching of mathematics,
+the use of computers for mathematics,
+and mathematical modeling.
 </p>
 <!--
 <p>
@@ -60,67 +56,170 @@ intersection singularities.
 </p>
 -->
 <p>
-More recently, I <a href="http://arxiv.org/abs/1309.3769">studied</a>
-the <a href="http://en.wikipedia.org/wiki/Fitting_ideal">Fitting ideals</a>
-of modules of
-logarithmic vector fields.  I bound these ideals above, and
-give a criterion for having a generating set of the logarithmic vector
-fields of a hypersurface (generalizing a criterion of Saito for free
-divisors).
+For more information, please see my <a href="research.pdf">research statement</a>.
 </p>
 
-<p>
-For more information, see my <a href="research.pdf">research
-statement</a>.
-</p>
-<p>
+
 <h1>Publications and <a href="http://arxiv.org/a/pike_b_1">Preprints</a></h1>
-In (roughly) reverse chronological order:
+<p>
+Below are my publications, in (roughly) reverse chronological order.
+Please <a href="index.html">contact me</a> if you need access to any of these papers and
+cannot obtain them by other means.
+Similar lists are available
+on <a href="cv.pdf">my CV</a>, 
+at <a href="http://arxiv.org/a/pike_b_1">the arXiv</a>, and
+at <a href="https://scholar.google.com/citations?user=4ujIj6UAAAAJ&amp;hl=en">Google Scholar</a>.
+</p>
 <ul>
+<li> Ragnar-Olaf Buchweitz and Brian Pike.
+<a href="http://plms.oxfordjournals.org/cgi/reprint/pdw013?ijkey=0IW8zpABBVpZSzC&amp;keytype=ref">
+Lifting free divisors</a>.
+<a href="http://plms.oxfordjournals.org/cgi/reprint/pdw013?ijkey=0IW8zpABBVpZSzC&amp;keytype=ref">
+Published</a> in <i>Proc. London Math. Soc.</i>.
+<a href="http://arxiv.org/abs/1310.7873">(Preprint)</a>.
+<br>
+Suppose that \(\varphi:X\to S\) is a map and \(f=0\) defines a free divisor in \(S\).
+When does \(f\circ \varphi=0\) define a free divisor on \(X\)? 
+
 <li> Brian Pike.
 <a href="http://arxiv.org/abs/1401.2976">Additive relative invariants and
-the components of a linear free divisor</a>.
-
-<li> Ragnar-Olaf Buchweitz, Brian Pike.
-<a href="http://arxiv.org/abs/1310.7873">Lifting free divisors</a>.
+the components of a linear free divisor</a>. 
+<a href="http://arxiv.org/abs/1401.2976">(Preprint)</a>.
+<br>
+The first half of this paper studies <i>prehomogeneous vector spaces (PVS)</i>,
+linear representations of linear algebraic groups that have an open orbit.
+The <i>relative invariants</i> of a PVS are functions defining the hypersurface
+components of the complement of the open orbit, and are related to
+multiplicative characters of a quotient \(H\) of the group, that is,
+homomorphisms \(H\to (\mathbb{C}\setminus \{0\},\cdot)\).
+I define the notion of <i>additive relative invariants</i>, and prove that they are
+related to additive functions of \(H\), that is, homomorphisms \(H\to (\mathbb{C},+)\).
+In the second half of the paper, I study <i>linear free divisors</i>, a type of
+free divisor that comes from a PVS.
+I describe the relationship between the group's structure and the corresponding
+linear free divisor; for instance, I can compute the number of components of
+the linear free divisor from the group's structure.
 
 <li> Brian Pike.
 <a href="http://arxiv.org/abs/1309.3769">On Fitting ideals of logarithmic
 vector fields and Saito's criterion</a>.
+<a href="http://arxiv.org/abs/1309.3769">(Preprint)</a>.
+<br>
+This studies the ideals generated by minors of a matrix containing the coefficients of
+a set of logarithmic vector fields.
+(These are  
+<a href="http://en.wikipedia.org/wiki/Fitting_ideal">Fitting ideals</a>
+of an appropriate module.)
+I found an upper bound for these ideals, and
+give a criterion for having a generating set of the logarithmic vector
+fields of a hypersurface, generalizing a criterion of Saito for free
+divisors.
 
 <li> James Damon and Brian Pike.
 <a href="http://arxiv.org/abs/1201.1579">Solvable groups, free divisors and
 nonisolated matrix singularities II: Vanishing topology</a>.
-To appear in <i>Geometry & Topology</i>. 
+<a href="http://dx.doi.org/10.2140/gt.2014.18.911">Published</a> in <i>Geometry &amp; Topology</i>,
+18 (2014) 911-962. 
+<!-- TODO: this is not a free link.  Do I have one? -->
+DOI <a href="http://dx.doi.org/10.2140/gt.2014.18.911">10.2140/gt.2014.18.911</a>.
+<a href="http://arxiv.org/abs/1201.1579">(Preprint)</a>
+<br>
+This studies the topology of complex analytic sets,
+in particular a generalization of the classical <a
+href="http://en.wikipedia.org/wiki/Milnor_number">Milnor number</a>
+of isolated hypersurface and isolated complete intersection
+singularities.
+Although this <i>singular Milnor number</i> is defined 
+quite generally, even for many non-isolated singularities,
+formulas to compute it are known in only a few cases.
+Here we describe an approach to find computable
+algebraic formulas for certain classes of singular Milnor numbers,
+and apply this technique to certain matrix singularities.
+We also explore how this technique can be used to calculate the
+<i>vanishing Euler characteristic</i> for many types of singularities,
+for example, Cohen-Macaulay singularities defined as 
+\(2\times 3\) matrix singularities.
+The software used for some of the calculations
+in this paper may be <a href="software.html">found here</a>.
 
 <li> James Damon and Brian Pike.
 <a href="http://arxiv.org/abs/1201.1577">Solvable groups, free divisors and
 nonisolated matrix singularities I: Towers of free divisors</a>.
-Submitted. 
+<a href="http://aif.cedram.org/aif-bin/item?id=AIF_2015__65_3_1251_0">Published</a>
+in <i>Annales de l'institut Fourier</i>,
+65 no. 3 (2015), p. 1251-1300.
+DOI <a href="http://dx.doi.org/10.5802/aif.2956">10.5802/aif.2956</a>.
+<a href="http://arxiv.org/abs/1201.1577">(Preprint)</a>
+<br>
+This work investigates certain prehomogeneous vector spaces.
+We show that when a PVS has the additional structure of a <i>block representation</i>,
+then various operations can be performed (e.g., quotient) that will produce new
+block representations, in particular, new PVSs.
+When a PVS is associated with a linear free divisor, then these operations
+often produce a PVS associated with a linear free divisor.
+In particular, we can build infinite <i>towers</i> of linear free divisors, and
+we give many examples of this.
 
 <li> Brian Pike.
-<a href="thesis.pdf">Singular Milnor Numbers of Non-Isolated Matrix Singularities</a>.
+<a href="papers/thesis.pdf">Singular Milnor Numbers of Non-Isolated Matrix Singularities</a>.
 Ph.D. Thesis, University of North Carolina at Chapel Hill, 2010.
 <a href="http://www.ams.org/mathscinet-getitem?mr=2782347">MR2782347</a>.
+<br>
+My goal was to find computable formulas for the
+<i>singular Milnor number</i>.
+My approach was a 2-step process: find a number of
+(mostly linear) free divisors, and then use a relatively simple
+Euler characteristic argument to express the singular Milnor number
+in terms of previously-known formulas.
+Most of this work was published in the two
+"Solvable groups, free divisors, and nonisolated matrix singularities" papers,
+listed above.
 
 <li> James Damon and Brian Pike.
-<a href="Solv.grp.andKpi1.fnl.pdf">Solvable group representations and
-free divisors whose complements are $K(\pi,1)$'s</a>.  
-<i>Topology and its Applications</i>. 159 (2012), no. 2, 437-449.
+<a href="http://dx.doi.org/10.1016/j.topol.2011.09.018">Solvable group representations and
+free divisors whose complements are \(K(\pi,1)\)'s</a>.  
+<a href="http://dx.doi.org/10.1016/j.topol.2011.09.018">Published</a> in
+<i>Topology and its Applications</i>, 159 (2012), no. 2, 437-449.
+DOI <a href="http://dx.doi.org/10.1016/j.topol.2011.09.018">10.1016/j.topol.2011.09.018</a>.
+<a href="https://arxiv.org/abs/1310.8280">(Preprint)</a>
 <a href="http://www.ams.org/mathscinet-getitem?mr=2868903">MR2868903</a>.
-DOI <a
-href="http://dx.doi.org/10.1016/j.topol.2011.09.018">10.1016/j.topol.2011.09.018</a>.
+<br>
+This describes a number of families of (linear) free divisors whose complements are
+<a href="https://en.wikipedia.org/wiki/Eilenberg%E2%80%93MacLane_space">
+Eilenberg-MacLane</a> \(K(\pi,1)\) topological spaces.
 
-<li> Pike, David A., Lígia Pizzatto, Brian A. Pike, and Richard Shine. 2008.
-Estimating survival rates of uncatchable animals: the myth of high juvenile mortality in reptiles.
-<i>Ecology</i> <b>89</b>:607-611.
+<li> Pike, David A., L&iacute;gia Pizzatto, Brian A. Pike, and Richard Shine. 
+<a href="http://dx.doi.org/10.1890/06-2162.1">
+Estimating survival rates of uncatchable animals: the myth of high juvenile mortality in reptiles</a>.
+<a href="http://dx.doi.org/10.1890/06-2162.1">Published</a> in 
+<i>Ecology</i>, 89 (2008), p. 607-611.
 DOI <a href="http://dx.doi.org/10.1890/06-2162.1">10.1890/06-2162.1</a>.
+<br>
+Many juvenile animals are hard to catch and study.
+The prevailing belief is that reptiles have high juvenile mortality.
+Here we develop a mathematical model that uses properties of the
+adult population to estimate the juvenile mortality rate in 
+a stable population.
+We apply the model to many species of reptiles.
+
 </ul>
+<p>
+<!--Note that in mathematics, it is traditional to order the authors
+alphabetically.-->
+<!-- TODO: investigate the effect of this on mathematicians' careers -->
+The LaTeX source files for many of my papers 
+include proofs, calculations, or computer programs,
+all carefully written up and then placed in comment
+environments that do not impact the resulting PDF file.
+If this is useful to you,
+then you can download the LaTeX source from 
+<a href="http://arxiv.org/a/pike_b_1">the arXiv</a>.
 </p>
 
-<p>
 <h1>Talks</h1>
+<p>
 You probably want the Notes, not the Slides.
+</p>
 <ul>
 <li>
   <i>The number of irreducible components of a linear free divisor</i>,
@@ -137,9 +236,7 @@ groups</i>, 11th International Workshop on Real and Complex
 Singularities, Sao Carlos, SP, Brazil, July 27, 2010:
 <a href="sao_carlos/talk.pdf">Slides</a>,
 <a href="sao_carlos/notes.pdf">Notes</a>.
-
 </ul>
-</p>
 
 
 </div>
