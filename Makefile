@@ -38,10 +38,18 @@ clean:
 add:
 	git add $(TARGETS)
 
+# This uses the Nu HTML checker (v.Nu), available at https://github.com/validator/validator/releases
+JAVA=java
+VNUJAR=../vnu.jar
+validate:
+	@if [ ! -e $(VNUJAR) ]; then echo "Nu HTML checker not found."; fi 
+	$(JAVA) -jar $(VNUJAR) $(TARGETS)
+
 help:
 	@ echo "Possible targets:"
 	@ echo "all                  Build all the autobuilt HTML files"
 	@ echo "foo.html             Build foo.html"
+	@ echo "validate             Validate the built files as HTML5 using the Nu HTML checker"
 	@ echo "add                  \"git add\" all of the autobuilt HTML files"
 	@ echo "clean                Delete all built products"
 	@ echo "help                 Ask for help"
